@@ -1,0 +1,53 @@
+{
+  "name": "icetee/huawei-lte-api-php",
+  "description": "API For huawei LAN/WAN LTE Modems written in PHP",
+  "type": "library",
+  "keywords": ["Huawei LTE", "API"],
+  "license": "LGPL-3.0-only",
+  "authors": [{
+    "name": "Tamás András Horváth",
+    "email": "htomy92@gmail.com"
+  }],
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-xml": "*",
+    "guzzlehttp/guzzle": "^7.3"
+  },
+  "require-dev": {
+    "laminas/laminas-coding-standard": "2.3.x",
+    "phpstan/phpstan": "^0.12.85",
+    "phpunit/phpunit": "^9.5.9",
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "Icetee\\HuaweiAPI\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Icetee\\HuaweiAPITest\\": "test/HuaweiAPITest/"
+    }
+  },
+  "scripts": {
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "phpstan": "phpstan analyse -l 6 src",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

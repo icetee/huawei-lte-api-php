@@ -1,0 +1,12 @@
+.git
+.vscode
+.editorconfig
+.note
+.phpcs-cache
+Dockerfile.dev
+phpcs.xml.dist
+phpunit.xml.dist
+examples
+test
+test.php
+vendor
