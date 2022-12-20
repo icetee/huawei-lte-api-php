@@ -49,7 +49,7 @@ final class Sms extends AbstractEndpoint implements SmsInterface
         int $ascending = 0,
         int $unreadPreferred = 0
     ): ResponseInterface {
-        return $this->connection->post('sms/send-list', [
+        return $this->connection->post('sms/sms-list', [
             'PageIndex'       => $page,
             'ReadCount'       => $readCount,
             'BoxType'         => $boxType->key(),
