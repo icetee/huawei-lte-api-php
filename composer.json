@@ -1,5 +1,5 @@
 {
-  "name": "icetee/huawei-lte-api-php",
+  "name": "michalkortas/sms-gate-api",
   "description": "API For huawei LAN/WAN LTE Modems written in PHP",
   "type": "library",
   "keywords": ["Huawei LTE", "API"],

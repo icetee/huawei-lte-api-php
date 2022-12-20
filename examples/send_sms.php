@@ -29,7 +29,7 @@ $sms = new Endpoints\Sms($connection);
 
 $response = $sms->sendSms($phoneNumbers, $argv[3]);
 
-if ($response->getXmlContent()->__toString() === ApiResponseEnum::OK) {
+if ($response->getXmlContent()->__toString() === ApiResponseEnum::OK->value) {
     echo "SMS was send successfully";
 } else {
     echo "Error";
